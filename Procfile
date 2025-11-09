@@ -1,1 +1,1 @@
-web: gunicorn p002autenticacion.wsgi
+web: gunicorn p002autenticacion.p002autenticacion.wsgi
