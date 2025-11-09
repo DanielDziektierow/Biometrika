@@ -1,0 +1,206 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #009879;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+}
+
+/* ==== CONTENEDOR PRINCIPAL ==== */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* 🟢 Divide en dos columnas */
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+/* ==== PANEL AGREGAR ==== */
+.add-panel {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px 25px;
+}
+
+.add-panel h2 {
+  color: #009879;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: 600;
+  color: #009879;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #009879;
+  box-shadow: 0 0 4px rgba(0,152,121,0.3);
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #009879;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #007f66;
+}
+
+/* ==== PANEL LISTADO ==== */
+.list-panel {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-panel h2 {
+  color: #009879;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: relative;
+  align-self: flex-end;
+}
+
+.dropdown-toggle {
+  background-color: #009879;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
+/* ==== TABLA ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #009879;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+}
+
+.empty-state i {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: #0d1b2a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 0.85rem;
+  margin-top: 30px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}

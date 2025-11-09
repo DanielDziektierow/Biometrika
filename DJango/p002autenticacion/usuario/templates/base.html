@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> 
+   <!--Librerias de iconos-->
+   <link rel="stylesheet" href="{% static 'account/css/style_acceso.css' %}">
+   <script src="{% static 'account/js/login.js' %}" defer></script>
+   
+   <link rel="stylesheet" href="{% static 'account/css/style_dashboard.css' %}">
+   <script src="{% static 'account/js/login.js' %}"></script>
+
+   <link rel="stylesheet" href="{% static 'account/css/style_personal.css' %}">
+   
+
+</head>
+<body>
+  {% block login-container %} 
+  {% endblock %}
+     
+  <div class="content">
+    {% block content%}
+    {% endblock %}
+  </div>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</body>
+</html>
+
+<!--
+DJANGO/
+  ├──p002autenticacion/
+        ├──p002autenticacion/
+            ├──settings.py
+            ├──urls.py
+            ├──static/
+            ├──usuario/
+            │   ├── templates/
+            │   │   ├── account/
+            │   │   |   ├──dashboard,html
+            │   │   |   ├──ubicaciones.htmml
+            │   │   |   ├──alertas.html
+            │   │   |   ├──dispositivos.html
+            │   │   |   ├──personal.html
+            │   │   │   └── login.html  
+            │   │   ├── registration/
+            │   │   │   └──logged_out.hml
+            │   │   └── base.html
+            │   ├── static/
+            │   │   ├── account/
+            │   │   │   ├── css/
+            │   │   │   │   ├── style_dashboard.css
+            │   │   │   │   ├── style_dispositivos.css
+            │   │   │   │   └── style_alertas.css
+            │   │   │   ├── js/
+            │   │   │   │   ├── dispositivos.js
+            │   │   │   │   ├── alertas.js
+            │   │   │   │   └── login.js
+            │   └── ...
+            └── ...
+            
+
+-->
