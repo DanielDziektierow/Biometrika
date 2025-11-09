@@ -26,8 +26,8 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'clave-temporal')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+DEBUG = False
+ALLOWED_HOSTS = ["biometrika.onrender.com"]
 
 
 # Application definition
